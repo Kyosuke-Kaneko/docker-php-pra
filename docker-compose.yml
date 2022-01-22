@@ -11,7 +11,7 @@ services:
     depends_on:
       - php # サービス同士の依存関係
   php: 
-    container_name: "php"
+    container_name: "php-docker-compose"
     build: ./docker/php # ビルドする dockerfileの場所。パスを指定する。./docker/php配下のDockerfileを参照して作成
     volumes:
       - ./src:/var/www/
